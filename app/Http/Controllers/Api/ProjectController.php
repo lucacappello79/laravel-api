@@ -12,7 +12,7 @@ class ProjectController extends Controller
     {
 
         // $projects = Project::all();
-        $projects = Project::with('type')->get();
+        $projects = Project::with('type', 'technologies')->get();
 
         return response()->json([
 
