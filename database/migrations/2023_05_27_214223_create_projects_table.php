@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
 
-            $table->string('title', 100)->unique();
+            $table->string('title', 35)->unique();
             $table->text('content', 100);
-            $table->string('slug', 100);
+            $table->string('slug', 350);
             $table->timestamps();
         });
     }
