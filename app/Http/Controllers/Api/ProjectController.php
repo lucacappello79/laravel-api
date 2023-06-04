@@ -32,7 +32,7 @@ class ProjectController extends Controller
             return response()->json([
 
                 'success' => true,
-                'projects' => $project,
+                'project' => $project,
 
             ]);
         } else {
